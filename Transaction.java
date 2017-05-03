@@ -10,7 +10,7 @@
  */
 package ist242team5bank;
 
-public class IST242Team5Bank 
+public class Transaction
 {
     public static void main(String[] args) 
     {
