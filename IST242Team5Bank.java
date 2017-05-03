@@ -1,11 +1,10 @@
 /*
  * Main Class Of Program.
- */
-package ist242team5bank;
-/**
  *
  * @author swiftycloudmusic
  */
+package ist242team5bank;
+
 public class IST242Team5Bank 
 {
     public static void main(String[] args) 
