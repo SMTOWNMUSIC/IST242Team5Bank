@@ -47,7 +47,7 @@ public class IST242Team5Bank
                         double depositAmount = Helper.inputDecimal();
                         user._checking.deposit(depositAmount);
                         
-                        //Instantiate Transaction Class
+                        // Instantiate Transaction Class
                         Transaction transaction = new Transaction("Checking", "Deposit", depositAmount);
                         transactionHistory.add(transaction);
 
@@ -64,20 +64,19 @@ public class IST242Team5Bank
                         double depositAmount = Helper.inputDecimal();
                         user._savings.deposit(depositAmount);
 
-                        //Instantiate transaction class and add arguments
-                        //Add object to the array list
+                        // Instantiate Transaction Class
                         Transaction transaction = new Transaction("Savings", "Deposit", depositAmount);
                         transactionHistory.add(transaction);
                         
                         //Savings account balance after
-                        System.out.println("Savings account balance: $" + user._savings.getAccountBalance());
+                        System.out.println("Savings Account Balance: $" + user._savings.getAccountBalance());
                     } 
                     
                     // Else If Statement
                     else if (menu.accountChoice == 3) 
                     {
                         // Prinout Vacation Account Balance
-                        System.out.println("Vacation account balance: $" + user._vacation.getAccountBalance());
+                        System.out.println("Vacation Account Balance: $" + user._vacation.getAccountBalance());
 
                         double depositAmount = Helper.inputDecimal();
                         user._vacation.deposit(depositAmount);
@@ -87,7 +86,7 @@ public class IST242Team5Bank
                         transactionHistory.add(transaction);
                         
                         // Printout Vacation Account Balance
-                        System.out.println("Vacation account balance: $" + user._vacation.getAccountBalance());
+                        System.out.println("Vacation Account Balance: $" + user._vacation.getAccountBalance());
                     }
                     
                     // Break Statement 
@@ -101,7 +100,7 @@ public class IST242Team5Bank
                     // If Statement
                     if (menu.accountChoice == 1) 
                     {
-                        System.out.println("Checking account balance: $" + user._checking.getAccountBalance());
+                        System.out.println("Checking Account Balance: $" + user._checking.getAccountBalance());
 
                         double withdrawAmount = Helper.inputDecimal();
                         user._checking.withdrawal(withdrawAmount);
@@ -110,14 +109,14 @@ public class IST242Team5Bank
                         Transaction transaction = new Transaction("Checking", "Withdraw", withdrawAmount);
                         transactionHistory.add(transaction);
                         
-                        System.out.println("Checking account balance: $" + user._checking.getAccountBalance());
+                        System.out.println("Checking Account Balance: $" + user._checking.getAccountBalance());
 
                     } 
                     
                     // Else If Statement
                     else if (menu.accountChoice == 2) 
                     {
-                        System.out.println("Savings account balance: $" + user._savings.getAccountBalance());
+                        System.out.println("Savings Account Balance: $" + user._savings.getAccountBalance());
 
                         double withdrawAmount = Helper.inputDecimal();
                         user._savings.withdrawal(withdrawAmount);
@@ -126,15 +125,14 @@ public class IST242Team5Bank
                         Transaction transaction = new Transaction("Savings", "Withdraw", withdrawAmount);
                         transactionHistory.add(transaction);
                         
-                        System.out.println("Savings account balance: $" + user._savings.getAccountBalance());
+                        System.out.println("Savings Account Balance: $" + user._savings.getAccountBalance());
 
                     } 
                     
                     // Else If Statement
                     else if (menu.accountChoice == 3) 
                     {    
-                        System.out.println("Vacation account balance: $"
-                        + user._vacation.getAccountBalance());
+                        System.out.println("Vacation Account Balance: $" + user._vacation.getAccountBalance());
 
                         double withdrawAmount = Helper.inputDecimal();
                         user._vacation.withdrawal(withdrawAmount);
@@ -143,7 +141,7 @@ public class IST242Team5Bank
                         Transaction transaction = new Transaction("Vacation", "Withdraw", withdrawAmount);
                         transactionHistory.add(transaction);
                         
-                        System.out.println("Vacation account balance: $" + user._vacation.getAccountBalance());
+                        System.out.println("Vacation Account Balance: $" + user._vacation.getAccountBalance());
                     }
                     
                     break;
@@ -151,29 +149,29 @@ public class IST242Team5Bank
                 // Transfer
                 // Case 3
                 case 3:
-                    System.out.println("Checking account balance: $" + user._checking.getAccountBalance());
+                    System.out.println("Checking Account Balance: $" + user._checking.getAccountBalance());
 
-                    System.out.println("Savings account balance: $" + user._savings.getAccountBalance());
+                    System.out.println("Savings Account Balance: $" + user._savings.getAccountBalance());
                    
-                    System.out.println("Vacation account balance: $" + user._vacation.getAccountBalance());
+                    System.out.println("Vacation Account Balance: $" + user._vacation.getAccountBalance());
                    
-                    System.out.println("From which account would you like to transfer money?");
+                    System.out.println("From Which Account Would You Like To Transfer Money?");
                     System.out.println(menu.chooseAccount());
                     
                     // If Statement
                     if (menu.accountChoice == 1) 
                     {    
-                        System.out.println("Checking account balance: $" + user._checking.getAccountBalance());
+                        System.out.println("Checking Account Balance: $" + user._checking.getAccountBalance());
                       
-                        System.out.println("To which account would you like to transfer money?");
+                        System.out.println("From Which Account Would You Like To Transfer Money?");
                         System.out.println(menu.chooseAccount());
                         
                         // If Statement
                         if (menu.accountChoice == 2) 
                         {    
-                            System.out.println("Savings account balance: $" + user._savings.getAccountBalance());
+                            System.out.println("Savings Account Balance: $" + user._savings.getAccountBalance());
                             
-                            System.out.println("How much money would you like to transfer? ");
+                            System.out.println("How Much Money Would You Like To Transfer? ");
                             double amount = Helper.inputDecimal();
                             user._checking.transfer(amount, user._savings);
                             
@@ -181,18 +179,18 @@ public class IST242Team5Bank
                             Transaction transfer = new Transaction("Checking", "Savings", "Transfer", amount);
                             transferHistory.add(transfer);
                             
-                            System.out.println("Checking account balance: $" + user._checking.getAccountBalance());
+                            System.out.println("Checking Account Balance: $" + user._checking.getAccountBalance());
 
-                            System.out.println("Savings account balance: $" + user._savings.getAccountBalance());
-
-                            System.out.println("Vacation account balance: $" + user._vacation.getAccountBalance());                            
+                            System.out.println("Savings Account Balance: $" + user._savings.getAccountBalance());
+                   
+                            System.out.println("Vacation Account Balance: $" + user._vacation.getAccountBalance());                          
                         }
                         // Else If Statement
                         else if (menu.accountChoice == 3) 
                         {
                             System.out.println("Vacation account balance: $" + user._vacation.getAccountBalance());
                             
-                            System.out.println("How much money would you like to transfer? ");
+                            System.out.println("How Much Money Would You Like To Transfer? ");
                             double amount = Helper.inputDecimal();
                             user._checking.transfer(amount, user._vacation);
                             
@@ -200,11 +198,11 @@ public class IST242Team5Bank
                             Transaction transfer = new Transaction("Checking", "Vacation", "Transfer", amount);
                             transferHistory.add(transfer);
                             
-                            System.out.println("Checking account balance: $" + user._checking.getAccountBalance());
+                            System.out.println("Checking Account Balance: $" + user._checking.getAccountBalance());
 
-                            System.out.println("Savings account balance: $" + user._savings.getAccountBalance());
-
-                            System.out.println("Vacation account balance: $" + user._vacation.getAccountBalance());                            
+                            System.out.println("Savings Account Balance: $" + user._savings.getAccountBalance());
+                   
+                            System.out.println("Vacation Account Balance: $" + user._vacation.getAccountBalance());                          
                         }
                         
                         // Break Statement
