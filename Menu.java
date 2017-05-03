@@ -8,7 +8,7 @@
  */
 package ist242team5bank;
 
-public class IST242Team5Bank 
+public class Menu
 {
     public static void main(String[] args) 
     {
