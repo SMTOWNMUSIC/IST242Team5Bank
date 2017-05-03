@@ -1,4 +1,3 @@
-
 /*
  * Each Has A Type (Checking, Savings, Vacation
  * Balance (Amount Of Money In Each Account)
