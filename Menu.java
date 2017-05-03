@@ -1,9 +1,8 @@
 /*
- * User Ability To Enter Info
-    - Firstname, Lastname
- * Ability To Return String Representation Of The User 
- * Store An ID Number (Random Number)
- * Store Reference To 3 Account Instances (Checking, Savings, Vacation)
+ * Draws Menu
+ * User Makes Choice 
+ * Returns Choice To Caller
+ * Part Of Your Design Is To Determine Menu Choices
  *
  * @author swiftycloudmusic
  */
